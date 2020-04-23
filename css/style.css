@@ -123,10 +123,12 @@ h1.promo-title {
    justify-content: space-between;
    align-items: center;
    font-family: Playfair Display;
+   flex-wrap: wrap;
 }
 
 .reviews-card {
    max-width: 370px;
+   flex-basis: 32%;
 }
 
 .reviews-title {
@@ -331,4 +333,84 @@ footer.page-footer {
 .twitter {
    background-color: #fff;
    padding: 15px 12px;
+}
+
+@media (max-width: 1120px) {
+   .reviews-cards {
+      justify-content: space-around;
+   }
+   .reviews-card:not(:last-child) {
+      margin-bottom: 25px;
+   }
+   .nav, .footer-nav {
+      max-width: 542px;
+      margin: auto;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+   }
+   .social-icons {
+      margin-top: 42px;
+   }
+   .nav-item, .footer-nav-item {
+      margin-bottom: 15px;
+   }
+}
+
+@media (max-width: 742px) {
+   h1.promo-title {
+      margin-bottom: 79px;
+   }
+}
+
+@media (max-width: 700px) {
+   .subscription::before {
+      display: none;
+   }
+}
+
+@media (max-width: 570px) {
+   .nav, .footer-nav {
+      max-width: 276px;
+      justify-content: space-between;
+   }
+
+   .nav-item:last-child {
+      margin-bottom: 45px;
+   }
+}
+
+@media (max-width: 484px) {
+   h1.promo-title {
+      font-size: 50px;
+      line-height: 150%;
+      margin-bottom: 45px;
+   }
+   .promo-text {
+      max-width: 320px;
+   }
+   .reviews-card {
+      width: 90%;
+      margin: auto;
+   }
+   .reviews-card-img {
+      margin: auto;
+   }
+}
+
+@media (max-width: 400px) {
+   .reviews-card-img {
+      width: 256px;
+   }
+}
+
+@media (max-width: 342px) {
+   h1.promo-title {
+      font-size: 32px;
+   }
+   .promo-text {
+      margin-left: 5%;
+   }
+   h2.page-title {
+      font-size: 27px;
+   }
 }
