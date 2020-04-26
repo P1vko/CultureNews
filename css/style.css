@@ -222,9 +222,14 @@ ul.advantages {
    margin-bottom: 25px;
 }
 
-.advantages-item:not(:last-child) {
-   padding-bottom: 25px;
+.advantages-item:not(:first-child):before {
+   content: '';
+   display: block;
+   margin: auto;
    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   width: 100px;   
+   margin-bottom: 24px;
+   padding-bottom: 20px;
 }
 
 .advantages-title {
