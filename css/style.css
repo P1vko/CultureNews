@@ -69,6 +69,10 @@ h2.page-title {
    margin-bottom: 45px;
 }
 
+.promo:hover {
+   
+}
+
 h1.promo-title {
    margin: 0;
    padding: 0;
@@ -124,11 +128,11 @@ h1.promo-title {
    align-items: center;
    font-family: Playfair Display;
    flex-wrap: wrap;
+   flex-direction: row;
 }
 
 .reviews-card {
    max-width: 370px;
-   flex-basis: 32%;
 }
 
 .reviews-title {
@@ -158,10 +162,14 @@ h1.promo-title {
    font-size: 23px;
    line-height: 31px;
    margin-bottom: 10px;
+   color: #000;
+   transition: 0.3s;
 }
 
-.reviews-card-title-actual  {
+.reviews-card-title:hover  {
    color: #FF7931;
+   transition: 0.2s;
+   cursor: default;
 }
 
 .reviews-description {
@@ -176,25 +184,12 @@ h1.promo-title {
 .subscription {
    position: relative;
    padding-top: 1px;
-   background: #F7F7F7;
    z-index: -2;
    display: flex;
    flex-direction: column;
    align-items: center;
    margin-bottom: 50px;
-}
-
-.subscription::before {
-   content: '';
-   display: block;
-   background-color: #fff;
-   border-radius: 50%;
-   position: absolute;
-   width: 700px;
-   height: 700px;
-   z-index: -1;
-   left: calc(50% - 350px);
-   top: -65px;
+   background: radial-gradient(circle, #ffffff 353px, #f7f7f7 353px);
 }
 
 .subscription-title {
@@ -248,7 +243,7 @@ p.advantages-text {
 }
 
 .watch-btn {
-   background: #FF7931;
+   background-color: #FF7931;
    border: none;
    padding-top: 15px;
    padding-bottom: 15px;
@@ -265,6 +260,11 @@ p.advantages-text {
    background-repeat: no-repeat;
    background-position: center right 30px;
    align-items: center;
+}
+
+.watch-btn:hover {
+   cursor: pointer;
+   background-color: #ff7931cc;
 }
 
 footer.page-footer {
