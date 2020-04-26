@@ -218,10 +218,6 @@ ul.advantages {
    margin-bottom: 25px;
 }
 
-.advantages-item {
-   margin-bottom: 25px;
-}
-
 .advantages-item:not(:first-child):before {
    content: '';
    display: block;
