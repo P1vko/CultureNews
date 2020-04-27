@@ -63,6 +63,8 @@ h2.page-title {
    height: 464px;
    background-image: url(../img/Hotel-11.jpg);
    background-position: center;
+   background-repeat: no-repeat;
+   margin: auto;
    display: flex;
    align-items: center;
    flex-direction: column;
